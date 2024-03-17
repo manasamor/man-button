@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button Generator</title>
+        <link href="/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/02439a4d2c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="code-container">
+                <div id="backdrop"></div>
+                <div id="code">
+                    <i class="fas fa-times" id="close"></i><br>
+                    <h3>HTML : </h3><br>
+
+                    <p id="html"></p>
+                    <br><hr>
+                    <h3>CSS : </h3><br>
+                    <p id="css"></p>
+                </div>
+            </div>
+            <button id="cstmBtn">Button Preview</button>
+            <hr><br>
+            <label for="buttonLabel">Button Label :</label>
+            <input type="text" id="buttonLabel" name="buttonLabel" >
+            <label for="fontSize">Font Size :</label>
+            <input type="number" id="fontSize" min="8" max="50" value="16">
+            <label for="fontColor">Font Color :</label>
+            <input type="color" id="fontColor"><br>
+            <label for="padding">Padding Top-Right-Bottom-Left :</label>
+            <input type="number" id="padding-top" value="1" min="0" max="24">-<input type="number" id="padding-right" value="6" min="0" max="48">-<input type="number" id="padding-bottom" value="1" min="0" max="24">-<input type="number" id="padding-left" value="6" min="0" max="48">
+            <label for="backgroundColor">Background Color :</label>
+            <input type="color" id="backgroundColor" value="#dddddd"><br>
+            <label for="borderColor">Border Color :</label>
+            <input type="color" id="borderColor" value="#dddddd">
+            <label for="borderWidth">Border Width :</label>
+            <input type="number" id="borderWidth" value="0" min="0" max="50">
+            <label for="borderRadius">Border Radius :</label>
+            <input type="number" id="borderRadius" value="0" max="50" min="0">
+            <button id="generate">Genrate</button>
+        </div>
+        <!-- JS Integration -->
+        <script src="/script.js"></script>
+    </body>
+</html>
